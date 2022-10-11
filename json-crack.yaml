@@ -39,10 +39,6 @@ spec:
       labels:
         service: json-crack-client
     spec:
-      hostAliases:
-      - ip: "192.168.0.10"
-        hostnames:
-        - "rehl-k8s-server"
       containers:
       - name: json-crack-client-pod
         image: pull.$(hostname --fqdn):30443/smallworld-docker/json-crack:v2.0.0
